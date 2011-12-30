@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<window class="dialog"
+	title="NaNoWriMo Meter for Firefox"
+	orient="vertical"
+	autostretch="always"
+	onload="sizeToContent()"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<!-- Original template by Jed Brown -->
+
+<groupbox align="center" orient="horizontal">
+<vbox>
+  <text value="NaNoWriMo Meter for Firefox" style="font-weight: bold; font-size: large;"/>
+  <text value="ver. 0.8"/>
+  <separator class="thin"/>
+  <text value="Created By:" style="font-weight: bold;"/>
+  <text value="Mike Tsao" class="url"
+        onclick="window.open('http://www.sowbug.org/'); window.close();"/>
+  <separator class="thin"/>
+    <text value="Home Page:" style="font-weight: bold;"/>
+    <text value="http://www.sowbug.org/"
+          class="url"
+        onclick="window.open('http://www.sowbug.org/'); window.close();"/>
+  <separator class="thin"/>
+  <text value="Get back to work!" style="font-weight: bold; font-size: x-large;"/>
+</vbox>
+<spring flex="1"/>
+<image src="chrome://nanowrimo_meter/skin/nanowrimo_meterb.png"/>
+</groupbox>
+
+  <hbox>
+  <spacer flex="1"/>
+   <button label="Close" oncommand="window.close();"/>
+  </hbox>
+
+</window>

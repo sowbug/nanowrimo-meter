@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<overlay id="nanowrimo_meterOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/x-javascript" src="chrome://nanowrimo_meter/content/nanowrimo_meterOverlay.js"/>
+
+<statusbar id="status-bar" class="chromeclass-status">
+  <tooltip orient="vertical" id="nanowrimometer-tooltip" onpopupshowing="oNanowrimoMeter.fill_tooltip();">
+    <description id="nanowrimometer-tooltip-nextupdate" value="Loading..."/>
+  </tooltip>
+  <statusbarpanel id="nanowrimometer-status"
+    tooltip="nanowrimometer-tooltip"
+    insertbefore="statusbar-updates"
+    label="Nanowrimo Meter"
+    onclick="oNanowrimoMeter.set_word_count();"/>
+</statusbar>
+
+</overlay>
+
